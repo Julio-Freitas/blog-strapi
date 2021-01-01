@@ -12,7 +12,9 @@ module.exports = ({ env }) => ({
         password: env("DATABASE_PASSWORD", "senha"),
         ssl: env.bool("DATABASE_SSL", false),
       },
-      options: {},
+      options: {
+        ssl: true,
+      },
     },
   },
 });
@@ -29,3 +31,9 @@ module.exports = ({ env }) => ({
  * host:ec2-52-200-16-99.compute-1.amazonaws.com
  * dbname: d37ok4votujnma
  */
+
+//hokpdcbtlqxmyd
+//623eaf9d4f69bf04d62a3e8aa32f786fee51ff12153449ddb3da08bf9520c1a1
+//ec2-52-5-136-183.compute-1.amazonaws.com
+//5432
+//d7cnlnmaas8062
