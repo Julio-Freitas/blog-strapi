@@ -32,7 +32,6 @@
   },
   "engines": {
     "node": ">=10.x <=14.x.x",
-    "npm": ">=6.0.0",
     "yarn":">=1.x"
   },
   "license": "MIT"
