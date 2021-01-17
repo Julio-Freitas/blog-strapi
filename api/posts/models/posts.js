@@ -7,11 +7,21 @@ const axios = require("axios");
  */
 
 module.exports = {
-  async afterCreate(result, data) {
-    axios.post("https://api.netlify.com/build_hooks/6001722b301e10f5ef06e83f");
-  },
+  lifecycles: {
+    // @ts-ignore
+    async afterCreate(result, data) {
+      // @ts-ignore
+      axios.post(
+        "https://api.netlify.com/build_hooks/6001722b301e10f5ef06e83f"
+      );
+    },
 
-  async afterUpdate(result, params, data) {
-    axios.post("https://api.netlify.com/build_hooks/6001722b301e10f5ef06e83f");
+    // @ts-ignore
+    async afterUpdate(result, params, data) {
+      // @ts-ignore
+      axios.post(
+        "https://api.netlify.com/build_hooks/6001722b301e10f5ef06e83f"
+      );
+    },
   },
 };
